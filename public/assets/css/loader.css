@@ -1,0 +1,163 @@
+div#load_screen {
+  background: #f1f2f3;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  right: 0;
+  top: 0px;
+  width: 100%;
+  z-index: 999999;
+}
+div#load_screen .loader {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+div#load_screen .loader-content {
+  align-self: center;
+  height: 100vh;
+  right: 0;
+}
+div#load_screen svg {
+  bottom: 0;
+  height: 231px;
+  left: 0;
+  margin: auto auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 119px;
+}
+div#load_screen svg path {
+  -moz-animation: animate_path 5s infinite; /* Firefox */
+  -webkit-animation: animate_path 5s infinite; /* Safari and Chrome */
+  animation: animate_path 5s;
+  fill: #1b55e2;
+  height: 20px;
+  width: 100px;
+}
+
+@-moz-keyframes animate_path /* Firefox */ {
+  0% {
+    fill: #1b55e2;
+  }
+  50% {
+    fill: #3b3f5c;
+  }
+  100% {
+    fill: #1b55e2;
+  }
+}
+
+@-webkit-keyframes animate_path /* Safari and Chrome */ {
+  0% {
+    fill: #1b55e2;
+  }
+  50% {
+    fill: #3b3f5c;
+  }
+  100% {
+    fill: #1b55e2;
+  }
+}
+
+div#load_screen svg circle {
+  -moz-animation: animate_circle 5s infinite; /* Firefox */
+  -webkit-animation: animate_circle 5s infinite; /* Safari and Chrome */
+  animation: animate_circle 5s;
+  fill: #2196f3;
+  height: 20px;
+  width: 100px;
+}
+
+@-moz-keyframes animate_circle /* Firefox */ {
+  0% {
+    fill: #2196f3;
+  }
+  50% {
+    fill: #ffbb44;
+  }
+  100% {
+    fill: #2196f3;
+  }
+}
+
+@-webkit-keyframes animate_circle /* Safari and Chrome */ {
+  0% {
+    fill: #2196f3;
+  }
+  50% {
+    fill: #ffbb44;
+  }
+  100% {
+    fill: #2196f3;
+  }
+}
+
+div#load_screen svg circle.st2 {
+  -moz-animation: animate_circle_one 3s infinite; /* Firefox */
+  -webkit-animation: animate_circle_one 3s infinite; /* Safari and Chrome */
+  animation: animate_circle_one 3s;
+  fill: #c2d5ff;
+  opacity: 1;
+}
+
+@-moz-keyframes animate_circle_one /* Firefox */ {
+  0% {
+    fill: #c2d5ff;
+  }
+  50% {
+    fill: #1b55e2;
+  }
+  100% {
+    fill: #c2d5ff;
+  }
+}
+
+@-webkit-keyframes animate_circle_one /* Safari and Chrome */ {
+  0% {
+    fill: #c2d5ff;
+  }
+  50% {
+    fill: #1b55e2;
+  }
+  100% {
+    fill: #c2d5ff;
+  }
+}
+
+div#load_screen svg circle.st4 {
+  -moz-animation: animate_circle_three 5s infinite; /* Firefox */
+  -webkit-animation: animate_circle_three 5s infinite; /* Safari and Chrome */
+  animation: animate_circle_three 5s;
+  fill: #3b3f5c;
+}
+@-moz-keyframes animate_circle_three /* Firefox */ {
+  0% {
+    fill: #3b3f5c;
+  }
+  50% {
+    fill: #acb0c3;
+  }
+  100% {
+    fill: #3b3f5c;
+  }
+}
+
+@-webkit-keyframes animate_circle_three /* Safari and Chrome */ {
+  0% {
+    fill: #3b3f5c;
+  }
+  50% {
+    fill: #acb0c3;
+  }
+  100% {
+    fill: #3b3f5c;
+  }
+}
+
+.loader {
+  background: #060818;
+  text-align: center;
+}
